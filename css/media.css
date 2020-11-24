@@ -40,6 +40,15 @@
     .wight-footer-content ul h4 {
         font-size: 15px;
     }
+    .or{
+        order: -1;
+    }
+    .wight-footer-content{
+        margin-top: 20px;
+    }
+    footer .img-fluid {
+        max-width: 130px;
+    }
 }
 @media (max-width: 767px){
     .top-header {
@@ -60,6 +69,12 @@
     .footer-content .img-fluid {
         max-width: 59px;
     }
+    .footer-content ul li form input {
+        font-size: 17px;
+    }
+    .img-fluid {
+        max-width: 82px;
+    }
 }
 @media (max-width: 575px){
     .wight-footer-content ul h4 {
@@ -79,6 +94,9 @@
     .footer-content .img-fluid {
         max-width: 47px;
     }
+    .img-fluid {
+        max-width: 78px;
+    }
     
 }
 @media (max-width: 480px){
@@ -87,5 +105,8 @@
     }
     .wight-footer-content ul li {
         font-size: 15px;
+    }
+    .img-fluid {
+        max-width: 75px;
     }
 }

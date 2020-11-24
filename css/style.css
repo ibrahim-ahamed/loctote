@@ -70,10 +70,31 @@ header .navbar-wrapper {
 .navbar .collapse{
     width: 40%;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-item{
+    padding: 5px 10px;
+}
+.navbar-light .navbar-nav .nav-item .nav-link {
+    padding: 0;
     color: #333;
     font-size: 18px;
     font-weight: 400;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-item .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: .4s linear;
+    opacity: 0;
+}
+.navbar-light .navbar-nav .nav-item:hover .nav-link::after{
+    
+    width: 100%;
+    opacity: 1;
 }
 .navbar .cart-inner{
     width: 40%;
@@ -129,7 +150,7 @@ header .navbar-wrapper {
 .product-select select{
     font-size: 18px;
     font-weight: 500;
-    padding: 11px 25px;
+    padding: 10px 30px;
     background: transparent;
 }
 .product-inner{
