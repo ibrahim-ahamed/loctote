@@ -75,6 +75,9 @@
     .navbar-brand .img-fluid {
         max-width: 82px;
     }
+    .navbar .collapse {
+        width: 17%;
+    }
 }
 @media (max-width: 575px){
     .wight-footer-content ul h4 {
